@@ -1,0 +1,182 @@
+/* GLOBAL */
+.nopandm {margin: 0; padding: 0;}
+.nop {padding: 0;}
+.nom {margin: 0;}
+
+
+/* HEADER */
+#headercontainer {width:100%; margin: 0 auto; background-color:#252525;}
+.navbarlinks {color:#fff; font-size: 15px;} 
+
+#navbar {
+	margin:0; 
+	padding:0; 
+	font-size:0; 
+	list-style-type: none; 
+	text-align: center; 
+	opacity: 0.9;}
+
+#navbar li {
+	display:inline-block; 
+	line-height: 80px; 
+	text-transform:uppercase;}
+
+#navbar li:hover {background-color:#555; cursor:pointer;} 
+#navbar li.active {background-color:#555;}
+#navbar li a {
+  text-decoration:none;
+  width:150px;
+  color:#eee;
+  float:left;}
+#logo {position:absolute;top:5px;left:20px;height:70px;}
+
+
+/* FOOTER */
+#footer {
+	color:white; 
+	width:100%; 
+	background-color:#252525;
+	height:100%; 
+	display:inline-block;}
+
+#footer p {margin: 0;}
+#textparts {position:relative; top:100%; width:100%; display:flex;}
+#section1footer {width: 100%;}
+#section2footer {width: 100%; text-align:center;}
+#section3footer {width: 100%; text-align:center;}
+
+/* -------------- SECTIONS -------------- */
+#outersection {height:100%; width: 70%; margin: 0 auto;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    animation: fadein 2s;
+	background-color:rgba(50,50,50,0.8);}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* HOMEPAGE SECTIONS */
+#section1 {
+	background-color:rgba(50,50,50,0.8); 
+	height:500px; width: 46%; 
+	padding: 2%; float:left;}
+#section2 {
+	background-color:rgba(50,50,50,0.8); 
+	height:500px; width: 46%; 
+	padding: 2%; float:left;}
+
+#contactus{
+	width:100%;
+	background-color:rgba(50,50,50,0.8);
+	text-align:center;
+}
+
+#contactus label {
+	display:block;
+}
+
+#contactus input {
+	width:40%;
+}
+
+#contactus textarea{
+	min-height:200px;
+	min-width:90%;
+}
+#contactus button{
+	padding:4%;
+	margin-bottom:5px;
+}
+
+/* REVIEW SECTIONS */
+#game1 {
+	background-color:rgba(50,50,50,0.8); 
+	height:87%; width: 29%; 
+	padding: 2%; float:left;}
+#game2 {
+	background-color:rgba(50,50,50,0.8); 
+	height:87%; width: 29%; 
+	padding: 2%; float:left;}
+#game3 {
+	background-color:rgba(50,50,50,0.8); 
+	height:87%; width: 29%; 
+	padding: 2%; float:left;}
+.gamepics{
+	width:100%;
+}
+
+/* GAMES */
+#mainsection{
+	background-color:rgba(50,50,50,0.8); 
+	height:100%; width: 100%; 
+	padding: 2%; float:left;}
+.gametitle{
+	text-align:center;
+	
+	text-transform:uppercase;
+}
+.gameinfo{
+	float:left;
+	font-size:18px;
+	color:#fff;
+}
+.gamevideo iframe{
+	width: 540px;
+	height: 295px; 
+	display:block;
+	margin: 0 auto;
+
+}
+.uniquechar{
+	color:#c51618;
+}
+
+.continuereading a {
+	text-decoration: none;
+	color:#c51618;
+}
+.continuereading {
+	text-align:center;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+	text-decoration:underline;
+}
+
+/* #main */
+#headertext {
+	text-align: center; 
+	color:rgba(255,255,255,1); 
+	text-transform:uppercase;
+	font-family: 'Amatic SC', cursive;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+	font-size: 60px;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    animation: fadein 2s;}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* ALL */
+body {
+	background:url('Images/bg3.jpg');
+	background-size:cover;
+	background-color:#000;
+	background-position:top left; 
+	background-repeat: no-repeat; 
+	color:#DDD; 
+	font-family:sans-serif;}
+
+@media screen and (max-width:767px) {
+    #logo {position:static;} /* static is default */
+    body {position:static;} /* static is default */
+    #navbar li {display:block;}
+    #navbar{margin-top:-80px;}
+    #navbar li a {width:100%; background-color:#252525;}
+    .gamevideo iframe {width:100%;}
+}
+
+
+
+
+
