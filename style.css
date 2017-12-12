@@ -1,0 +1,11 @@
+/* Global padding and margin variables */
+.nopandm {margin: 0; padding: 0;}
+.nop {padding: 0;}
+.nom {margin: 0;}
+
+/* HEADER */
+#header {
+  width:100%;
+  margin: 0 auto;
+  background-color:#252525;
+}
