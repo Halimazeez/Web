@@ -7,5 +7,90 @@
 #header {
   width:100%;
   margin: 0 auto;
-  background-color:#252525;
+  height: 70px;
+  background: transparent;
+  z-index: 5;
+
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  box-shadow: 0 0 1em rgba(0,0,0,0.50);
+  /* min-width: 769px; */
+}
+
+nav {
+  width: 50%;
+  text-align:center;
+  margin: 0 -10% 0 0;
+
+  position: absolute;
+  right: 50%;
+  top: 0;
+}
+
+nav a {
+  display:inline-block;
+  padding: 0 1em;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  font-size: 1em;
+  line-height: 70px;
+  color: #333;
+  font-weight:bold;
+}
+
+nav a:hover {
+  color: #eee;
+}
+/* END FOOTER*/
+
+/*FOOTER*/
+#footer {
+  background-color:#343434;
+  width:100%;
+  margin: 0 auto;
+}
+
+/* MAIN */
+main h1 {
+  line-height: 100%;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+#headermain {
+  background: url(images/bg.png) 50% 100% fixed;
+  background-size: 100%;
+  height: 70%;
+}
+
+/* END FOOTER */
+
+.section {
+  background-color:#ffffff;
+}
+
+p {
+  font-color: #454540;
+  margin : 0;
+}
+
+figure{
+  width:400px;
+}
+
+body {
+  background-color:#fff;
+
+  margin: 0;
+
+}
+
+a {
+  color: #333;
+
 }
