@@ -1,0 +1,6 @@
+.scrollnav {
+  background-color: #fff;
+  -transition: 0.2s;
+  position:fixed;
+  box-shadow: 0 0 1em rgba(0,0,0,0.50);
+}
