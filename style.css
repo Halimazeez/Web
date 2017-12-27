@@ -1,4 +1,4 @@
-/* Global padding and margin variables */
+/* Global variables */
 .nopandm {margin: 0; padding: 0;}
 .nop {padding: 0;}
 .nom {margin: 0;}
@@ -9,35 +9,12 @@
 
 /* HEADER */
 #header {
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 4em 2em;
-  position:absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
 }
 
 #headercontainer{
   width:100%;
-
-}
-
-svg {
-  stroke: white;
-  fill: none;
-
-}
-.scroll-arrow{
-  width:40px;
-  position:absolute;
-  top: auto;
-  left: 0;
-  right: 0;
-
-  bottom: 40px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #logo{
@@ -61,6 +38,7 @@ nav a {
   text-decoration: none;
   cursor: pointer;
   color: #fff;
+
 }
 
 #navbar a:hover, .active {
@@ -74,14 +52,83 @@ nav a {
 #navbar form select {
 
 }
-/* END HEADER*/
 
-/*FOOTER*/
-#footer {
-  background-color:#343434;
-  width:100%;
-  margin: 0 auto;
+/* SPLASH */
+#intro {
+  max-width:100%;
+  text-align:center;
+  display:block;
 }
+
+#splashsection {
+  box-shadow: 0 0 1em rgba(0,0,0,0.5);
+  background: #000 url(images/bg3.png) no-repeat fixed;
+  background-size: cover;
+  background-position: top;
+  z-index: -1;
+  min-height: 400px;
+  height: 100vh;
+}
+
+#splashart {
+  padding-top: 20vh;
+  max-width: 50%;
+  text-align:left;
+  line-height: 1.4;
+  margin: 0 auto;
+  float:none;
+}
+
+#splashart h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #fff;
+  z-index: 1;
+}
+
+#splashart * {
+  margin: 0;
+}
+
+#splashart p {
+  font-size: 18px;
+
+}
+
+#splashart a{
+  font-weight:500;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  background-color: #fff;
+  margin-top: 10px;
+  border: 0.8em solid #fff;
+  line-height:1em;
+  color: #000;
+}
+svg {
+  stroke: white;
+  fill: none;
+}
+.scroll-arrow{
+  width:40px;
+  position:absolute;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scroll-arrow.is-animated {
+  -webkit-animation:MoveUpDown 2.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0% {bottom: 10%;}
+  50% {bottom: 8%;}
+  100% {bottom: 10%;}
+}
+
 
 /* MAIN */
 main h1 {
@@ -95,52 +142,21 @@ main {
   width: 100%;
 }
 
-#headermain {
-  height: 100vh;
-  box-shadow: 0 0 1em rgba(0,0,0,0.5);
-  background: #000 url(images/bg3.png) no-repeat fixed;
-  background-size: cover;
-  background-position: top;
-  z-index: -1;
+#main {
+  background-color:#fff;
+  height: 500px;
 }
 
-.headermaincontent{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.scroll-arrow.is-animated {
-  -webkit-animation:MoveUpDown 2.5s linear infinite;
-}
-@keyframes MoveUpDown {
-  0% {bottom: 10%;}
-  50% {bottom: 8%;}
-  100% {bottom: 10%;}
-}
-#headermain h1 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
-
-#outermain {
-  background-color:#ddd;
-  height: 50vh;
-}
-
-/* END FOOTER */
-
-.section {
-  background-color:#ffffff;
+/*FOOTER*/
+#footer {
+  background-color:#343434;
+  width:100%;
+  margin: 0 auto;
 }
 
 p {
-  color: #454540;
-  margin : 0;
+  color: #fff;
+
 }
 
 figure{
@@ -150,11 +166,9 @@ figure{
 body {
   margin: 0;
 }
-
 a {
-  color: #333;
+  text-decoration: none;
 }
-
 * {
   transition:all .3s ease-in-out;
   font-family: 'Yanone Kaffeesatz', sans-serif;

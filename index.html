@@ -4,59 +4,68 @@
 <head>
 	<title>Leicster Gyms</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<link rel="stylesheet" type="text/css" href="js_responsive.css"/>
 	<link rel="stylesheet" type="text/css" href="mobile.css"/>
-
+	<link rel="stylesheet" type="text/css" href="js_responsive.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 </head>
 
 
 <body class="">
 
-<!-- Header -->
+<!-- Main splash section -->
 
+<section id="splashsection">
 
-<section id="headercontainer">
+	<!-- Header Section-->
+	<section id="headercontainer">
 
-	<header id="header">
+		<header id="header">
 
-		<a href="#" class="logo floatl">
-			<h1 id="logo">GymReviews </h1>
+			<a href="#" class="logo floatl">
+				<h1 id="logo">GymReviews </h1>
+			</a>
+
+		  <nav id="navbar" class="floatr">
+				<a class="active" href="index.html">Home</a></li>
+				<a href="gyms.html">Gyms</a></li>
+				<a href="about.html">About</a></li>
+
+				<form action="#" class="">
+					<select>
+						<option value="/">Home</option>
+						<option value="gyms.html">Gyms</option>
+						<option value="/gyms/">About</option>
+					</select>
+				</form>
+			</nav>
+
+		</header>
+
+	</section><!-- End Header section-->
+
+	<section id="intro">
+		<article id="splashart">
+				<h1>Become a champion.</h1>
+				<p>Become your own goals.</p>
+				<p>
+					<a href="#main">Get Started</a>
+				</p>
+		</article>
+
+		<a href="#main" class="scroll-arrow is-animated">
+    	<svg viewBox="0 0 25 13" >
+  			<polyline points="0 0 13 13 25 0"></polyline>
+			</svg>
 		</a>
-
-	  <nav id="navbar" class="floatr">
-			<a class="active" href="index.html">Home</a></li>
-			<a href="gyms.html">Gyms</a></li>
-			<a href="about.html">About</a></li>
-
-			<form action="#" class="">
-				<select>
-					<option value="/">Home</option>
-					<option value="gyms.html">Gyms</option>
-					<option value="/gyms/">About</option>
-				</select>
-			</form>
-		</nav>
-
-		</div>
-</section>
-
-
-<!-- MAIN -->
-	<main id="main">
-		<section id="headermain">
-
-		<a href="#outermain" class="scroll-arrow is-animated">
-        <svg viewBox="0 0 25 13" >
-  				<polyline points="0 0 13 13 25 0"></polyline>
-				</svg>
-		</a>
-
-
 	</section>
 
-		<div id="outermain">
-		</div>
-	</section>
+</section> <!-- Splash finish -->
+
+	<main id="main"> <!-- Main -->
+
+	</main>
+
+</body>
+	<script type="text/javascript" src="js.js"></script>
 
 </html>

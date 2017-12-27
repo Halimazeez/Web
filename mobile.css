@@ -1,5 +1,5 @@
 @media screen and (min-width: 900px) {
-  #headercontainer{max-width:1100px;}
+  #headercontainer{max-width: 1100px;}
 }
 @media screen and (max-width:900px){
   #navbar a{display:none;}
@@ -10,7 +10,7 @@
 @media screen and (max-width:750px){
   .floatl, .floatr{display:block; float:none;}
   .logo {margin-bottom:20px;}
-  #navbar form select {width:75vw;}
+  #navbar form select {width: 100%;}
   header {text-align:center;}
 
 }
