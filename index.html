@@ -1,4 +1,3 @@
-</<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,7 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link rel="stylesheet" type="text/css" href="mobile.css"/>
 	<link rel="stylesheet" type="text/css" href="js_responsive.css"/>
-	<link rel="stylesheet" href="https://www.squarespace.com/assets/fonts/HCo_fonts_www.css">
+	<meta charset="ctf-8">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://goo.gl/dh6zG5">
 	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
 </head>
 
@@ -45,6 +46,7 @@
 	</section><!-- End Header section-->
 
 	<section id="intro">
+		
 		<article class="splashart">
 				<h1>Become a champion.</h1>
 				<p>Become your own goals.</p>
@@ -58,11 +60,12 @@
   			<polyline points="0 0 13 12 25 0"></polyline>
 			</svg>
 		</a>
+
 	</section>
 
 </section> <!-- Splash finish -->
 
-	<main id="main" class=> <!-- Main -->
+	<main id="main"> <!-- Main -->
 
 		<article class="info">
 			<h2>The top gyms in the United Kingdom</h2>
@@ -71,21 +74,25 @@
 
 		<section id="figures">
 
-			<figure class="gyms">
+			<figure>
 				<a href="">
 					<img alt="Pure Gym" src="images/puregym.jpg">
 					<figcaption>PureGym</figcaption>
 				</a>
 			</figure>
 
-			<figure class="gyms">
-				<img alt="DW Fitness" src="images/dwsports.png">
-				<figcaption>DW Sports</figcaption>
+			<figure>
+				<a href="">
+					<img alt="DW Fitness" src="images/dwsports.png">
+					<figcaption>DW Sports</figcaption>
+				</a>
 			</figure>
 
 			<figure>
-				<img alt="The Gym Group" src="images/gymgroup.jpeg">
-				<figcaption>The Gym Group</figcaption>
+				<a href="">
+					<img alt="The Gym Group" src="images/gymgroup.jpeg">
+					<figcaption>The Gym Group</figcaption>
+				</a>
 			</figure>
 
 			<figure>
@@ -95,6 +102,17 @@
 
 		</section>
 
+		<section id="gymcontent">
+
+			<div id="content-pure">
+				<h1>Puregym</h1>
+				<div id="map"></div>
+			</div>
+			<div id="content-dw" class="hidden"> </div>
+			<div id="content-thegym" class="hidden"> </div>
+			<div id="content-anytime" class="hidden"> </div>
+		</section>
+
 	</main>
 
 	<footer id="footer">
@@ -102,22 +120,28 @@
 		<section class="footercontainer">
 
 			<div class="sections sitemap">
-				<h1>Sitemap</h1>
-				<a href="#headercontainer">Home</a>
-				<a href="#main">Gyms</a>
-				<a href="">About</a>
+				<div class="wrapper">
+					<h1>Sitemap</h1>
+					<a href="#headercontainer">Home</a>
+					<a href="#main">Gyms</a>
+					<a href="">About</a>
+				</div>
 			</div>
 
-			<div class="sections sitemap">
-				<a href="#figures">PureGym</a>
-				<a href="#figures">DW Sports</a>
-				<a href="#figures">The Gym Group</a>
-				<a href="#figures">Anytime Fitness</a>
+			<div class="sections sitemap fill">
+				<div class="wrapper">
+					<a href="#figures">PureGym</a>
+					<a href="#figures">DW Sports</a>
+					<a href="#figures">The Gym Group</a>
+					<a href="#figures">Anytime Fitness</a>
+				</div>
 			</div>
 
 			<div class="sections copyright">
-				<p>Developed by Halim Azeez</p>
-				<p>&copy; p15180243</p>
+				<div class="wrapper">
+					<p>Developed by Halim Azeez</p>
+					<p class="txt">&copy; p15180243</p>
+				</div>
 			</div>
 		</section>
 
@@ -126,6 +150,8 @@
 </body>
 
 	<script type="text/javascript" src="js.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2jWmbXTq-oDutpEJJHnqdXptpYjKO1Ok&callback=initMap"
+    async defer></script>
 	<!--loading js after page for efficiency -->
 
 </html>

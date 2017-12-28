@@ -8,6 +8,7 @@
   .navbar form {display:block;}
   .navbar form select {width: 10vw;}
   #headercontainer{max-width: 90%;}
+  .scroll-arrow {display:inline-block;}
 
 }
 @media screen and (max-width:750px){ /* form menu big */
@@ -15,6 +16,7 @@
   .logo {margin-bottom:20px;}
   .navbar form select {width: 100%;}
   header {text-align:center;}
+  .scroll-arrow {display:none;}
 }
 
 @media screen and (max-height:650px) { /* fix height on text box so it doesnt hide */
@@ -26,6 +28,6 @@
   }
 }
 
-@media screen and (max-height: 400px) { /* Arrow hide on overlap*/
+@media screen and (max-height: 500px) { /* Arrow hide on overlap*/
   .scroll-arrow {display:none;}
 }
