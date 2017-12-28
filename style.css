@@ -8,28 +8,23 @@
 
 
 /* HEADER */
-#header {
-  padding: 4em 2em;
-}
-
 #headercontainer{
+  padding-top: 1em;
   width:100%;
   margin: 0 auto;
 }
 
-#logo{
-  margin: 0 auto 0 0;
+.logo{
+  margin: 0 0 0 5px;
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
 
 }
-.logo {text-decoration: none;}
 
-#navbar {
+.navbar {
   margin: 0 auto;
   line-height: normal;
-
 }
 
 nav a {
@@ -41,21 +36,22 @@ nav a {
 
 }
 
-#navbar a:hover, .active {
+.navbar a:hover, .active {
   color:#56AED4;
 }
 
-#navbar form {
+.navbar form {
   display:none;
 }
 
-#navbar form select {
+.navbar form select {
 
 }
 
 /* SPLASH */
 #intro {
   max-width:100%;
+  height:100%;
   text-align:center;
   display:block;
 }
@@ -66,36 +62,35 @@ nav a {
   background-size: cover;
   background-position: top;
   z-index: -1;
-  min-height: 400px;
+  min-height: 300px;
   height: 100vh;
 }
 
-#splashart {
+.splashart {
   padding-top: 20vh;
-  max-width: 50%;
+  width:50vw;
   text-align:left;
   line-height: 1.4;
   margin: 0 auto;
-  float:none;
+  clear:both;
 }
 
-#splashart h1 {
+.splashart h1 {
   text-transform: uppercase;
   font-size: 36px;
   color: #fff;
   z-index: 1;
 }
 
-#splashart * {
+.splashart * {
   margin: 0;
 }
 
-#splashart p {
+.splashart p {
   font-size: 18px;
 
 }
-
-#splashart a{
+.splashart a{
   font-weight:500;
   text-transform: uppercase;
   display: inline-block;
@@ -112,21 +107,18 @@ svg {
 }
 .scroll-arrow{
   width:40px;
-  position:absolute;
-  bottom: auto;
-  left: 0;
-  right: 0;
-  margin: auto;
+  position: absolute;
+  bottom: 20px;
 }
 
 .scroll-arrow.is-animated {
-  -webkit-animation:MoveUpDown 2.5s linear infinite;
+  -webkit-animation:MoveUpDown 2s linear infinite;
 }
 
 @keyframes MoveUpDown {
-  0% {bottom: 10%;}
-  50% {bottom: 8%;}
-  100% {bottom: 10%;}
+  0% {transform:translateY(0);}
+  50% {transform:translateY(5px);}
+  100% {transform:translateY(0);}
 }
 
 
@@ -172,4 +164,5 @@ a {
 * {
   transition:all .3s ease-in-out;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  box-sizing: border-box;
 }

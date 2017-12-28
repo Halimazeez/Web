@@ -2,15 +2,19 @@
   #headercontainer{max-width: 1100px;}
 }
 @media screen and (max-width:900px){
-  #navbar a{display:none;}
-  #navbar form {display:block;}
-  #navbar form select {width: 10vw;}
+  .navbar a{display:none;}
+  .navbar form {display:block;}
+  .navbar form select {width: 10vw;}
   #headercontainer{max-width: 90%;}
+  .splashart {display:block;}
 }
 @media screen and (max-width:750px){
   .floatl, .floatr{display:block; float:none;}
   .logo {margin-bottom:20px;}
-  #navbar form select {width: 100%;}
+  .navbar form select {width: 100%;}
   header {text-align:center;}
 
+}
+@media screen and (max-height < 400px) {
+    .scroll-arrow {display:none;}
 }
