@@ -144,12 +144,11 @@ svg {
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
   font-family: 'Gotham',sans-serif;
-}
-
-#main p {
 
 }
+
 
 .info h2{
   color: #000;
@@ -175,21 +174,21 @@ svg {
 }
 
 figure img {
-  max-height: 400px;
+  max-height: 200px;
   position: relative;
   max-width: 100%;
 }
 
 figure {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   margin: 20px;
 }
 
 figcaption {
   background:rgba(0,0,0,0.2);
   color: #fff;
-  width: 400px;
+  width: 200px;
   position:relative;
   bottom: 19px;
 }
@@ -216,7 +215,7 @@ footer h1 {
 
 }
 
-.footercontainer,.sections {
+.sections {
   margin: 15px;
   min-width: 200px;
   width: 200px;

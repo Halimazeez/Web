@@ -8,6 +8,7 @@
   .navbar form {display:block;}
   .navbar form select {width: 10vw;}
   #headercontainer{max-width: 90%;}
+
 }
 @media screen and (max-width:750px){ /* form menu big */
   .floatl, .floatr{display:block; float:none;}
