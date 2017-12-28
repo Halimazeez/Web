@@ -88,7 +88,7 @@ nav a {
   font-size: 36px;
   color: #fff;
   z-index: 1;
-  font-family: Gotham,sans-serif;
+  font-family: 'Gotham',sans-serif;
 }
 
 .splashart * {
@@ -109,7 +109,7 @@ nav a {
   border: 0.8em solid #fff;
   line-height:1em;
   color: #000;
-  font-family: Gotham,sans-serif;
+  font-family: 'Gotham',sans-serif;
 
   /* looky nice stuff on button */
   -webkit-font-smoothing: antialiased;
@@ -138,24 +138,13 @@ svg {
 
 
 /* MAIN */
-main h1 {
-  line-height: 100%;
-  font-weight: 600;
-  font-size: 64px;
-  color: white;
-}
-
-main {
-  width: 100%;
-}
 
 #main {
-  max-width:1100px;
+
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
-  font-family: Gotham,sans-serif;
-  z-index: -5;
+  font-family: 'Gotham',sans-serif;
 }
 
 #main p {
@@ -181,20 +170,20 @@ main {
 #figures {
   padding-top: 50px;
   display:flex;
-  height: 100%;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
 }
 
-.gyms img {
-  height: 400px;
+figure img {
+  max-height: 400px;
   position: relative;
+  max-width: 100%;
 }
 
 figure {
   width: 400px;
   height: 400px;
-  align-items: center;
+  margin: 20px;
 }
 
 figcaption {
@@ -206,20 +195,54 @@ figcaption {
 }
 
 /*FOOTER*/
-#footer {
+footer {
   background-color:#343434;
-  width:100%;
-  margin: 0 auto;
+  width: 100%;
+  position:absolute;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+footer h1 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
+.footercontainer{
+  position:relative;
+  margin: 0 1% 0 1%;
+  float:left;
+  width: 100%;
+
+}
+
+.footercontainer,.sections {
+  margin: 15px;
+  min-width: 200px;
+  width: 200px;
+
+}
+
+.sections a {
+  display: block;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1em;
+  font-family: 'Gotham', sans-serif;
+  color: #fff;
+}
+
+.sections a:last-child {border:none;}
+
+/* global */
 p {
   color: #fff;
 
 }
-
 body {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
