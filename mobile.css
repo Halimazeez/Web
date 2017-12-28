@@ -1,26 +1,30 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) { /* Desktop */
   #headercontainer{max-width: 1100px;}
   .scroll-arrow {display:inline-block;}
-  .splashart {padding: 0; position:relative; left:-10%; top: 70vh;}
+  .splashart {position:relative; left:-15vh; top: 70vh; text-align: left;}
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:900px){ /* form menu small */
   .navbar a{display:none;}
   .navbar form {display:block;}
   .navbar form select {width: 10vw;}
   #headercontainer{max-width: 90%;}
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:750px){ /* form menu big */
   .floatl, .floatr{display:block; float:none;}
   .logo {margin-bottom:20px;}
   .navbar form select {width: 100%;}
   header {text-align:center;}
 }
 
-@media screen and (max-height:250px) {
-  .scroll-arrow {display:none;}
+@media screen and (max-height:650px) { /* fix height on text box so it doesnt hide */
+  .splashart {
+    text-align: center;
+    position:relative;
+    left: 0vh;
+    top: 30vh;
+  }
 }
 
-@media screen and (max-height:500px) {
+@media screen and (max-height: 400px) { /* Arrow hide on overlap*/
   .scroll-arrow {display:none;}
-  .splashart {top: 50vh;}
 }
