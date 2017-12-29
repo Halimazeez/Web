@@ -1,7 +1,14 @@
-@media screen and (min-width: 1100px) { /* Desktop */
+@media screen and (min-width: 985px) { /* Desktop */
   #headercontainer{max-width: 1100px;}
   .scroll-arrow {display:inline-block;}
   .splashart {position:relative; left:-15vh; top: 70vh; text-align: left;}
+}
+
+/* inlarge figure by 100 img for desktop at appropriate width */
+@media screen and (min-width:750px) {
+  figcaption {width:300px; bottom: 319px;}
+  figure img {max-height:300px;}
+  figure {width:300px; height:300px;}
 }
 @media screen and (max-width:900px){ /* form menu small */
   .navbar a{display:none;}
@@ -30,4 +37,9 @@
 
 @media screen and (max-height: 500px) { /* Arrow hide on overlap*/
   .scroll-arrow {display:none;}
+}
+@media screen and (max-width: 500px) { /* extreme responsive on figures */
+  figcaption {min-width: 100%; bottom: 419px;}
+  figure img {min-height:100%; min-width:100%;}
+  figure {width:600px; height: 400px;}
 }

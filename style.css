@@ -191,7 +191,9 @@ figcaption {
 #gymcontent h1 {
   text-transform: uppercase;
   font-size: 50px;
+  display:none;
 }
+
 #map {
   height: 400px;
   width: 100%;
