@@ -6,14 +6,17 @@ var dwgym = {lat: 52.636825, lng: -1.131819}; //dwgym location
 var thegym = {lat: 52.637469, lng: -1.136813}; //thegym location
 var anytime = {lat: 52.774445, lng: -1.210305}; //anytime location
 
+var map = null;
 
 //init google maps
 function initMap() {
+
+  //set the default map to point at dmu as center
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
+    zoom: 17,
     center: dmu,
     scrollwheel: false,
-    disableDefaultUI: true
+    disableDefaultUI: true //disables the google maps ui (click and right click for scroll)
   });
 
   // plot dmu on map as default
@@ -24,12 +27,21 @@ function initMap() {
   });
 
   //google map plot function with global parameter
-  //(this script has literally taken me a whole night to configure...)
+  //spend 6hours writing this small function.....
   function moveMarker(location) {
     map.setCenter(location);
     marker.setPosition(location);
     animation:google.maps.Animation.DROP
   }
+
+  //map listener to re-center from timeout
+  map.addListener('center_changed', function() {
+    window.setTimeout(function() {
+      map.panTo(marker.getPosition());
+      map.setZoom(17);
+    }, 8000); //8000ms (8sec) delay if untouched map will recentre to current mark and zoom
+  });
+
 
   //event handlers for figure click, calling above function with
   //parameter respectively
@@ -59,7 +71,8 @@ function initMap() {
   document.getElementById("anytimetab2").addEventListener("click", function(event) {
     moveMarker(anytime);
   });
-}
+
+} // end init
 
 //init map on website load (Default is located @ DMU)
 google.maps.event.addDomListener(window, "load", initMap());
@@ -71,14 +84,58 @@ google.maps.event.addDomListener(window, "resize", function() {
   map.setCenter(center);
 });
 
-/*function responsivecenter() { // old
-  center = map.getCenter();
-}*/
 
-//Headings show
-function myFunction() {
-  var purecontent = document.getElementById("content-pure");
-  purecontent.className += " show";
-}
+//event handlers for heading
+document.getElementById("puregymtab").addEventListener("click",function(event) {
+    headerloop(headerpure); //pass document id as parameter
+});
+document.getElementById("dwtab").addEventListener("click",function(event) {
+    headerloop(headerdw); //pass document id as parameter
+});
+document.getElementById("thegymtab").addEventListener("click",function(event) {
+    headerloop(headerthe); //pass document id as parameter
+});
+document.getElementById("anytimetab").addEventListener("click",function(event) {
+    headerloop(headerany); //pass document id as parameter
+});
 
-document.getElementById("puregymtab").addEventListener("click", myFunction());
+// vars to hold document id's (used later for array populate)
+var headerpure = document.getElementById("contentpure");
+var headerdw = document.getElementById("contentdw");
+var headerthe = document.getElementById("contentthegym");
+var headerany = document.getElementById("contentanytime")
+
+//similar to marker, takes passed parameter 'x' and changes style to 'block' from
+//'none' to display the header on screen.
+function headerloop(x) {
+
+  var y = document.getElementById("gymcontent"); //set y to gymcontent section id
+
+  //populate array constant with header ids
+  const set = [headerpure, headerdw, headerthe, headerany];
+
+  //*im quite proud of this*
+  // set pointer of i to 0 => 1st element of array
+  //for loop bounds: 0-3 = 4 elements of the array
+  for (var i=0; i < set.length; i++) { 
+    var a = set[i]; //set a to the current iteration of set element
+    if (a.style.display = "block") { //if the header is displayed ->
+      a.style.display = "none" // disable the display
+    }
+    x.style.display = "block" //show header respective to the passed parameter x.
+  }
+} //end headerloop
+
+//footer repeats on sitemap for headerloop function above
+document.getElementById("puregymtab2").addEventListener("click", function(event) {
+  headerloop(headerpure); //pass document id as parameter
+});
+document.getElementById("dwtab2").addEventListener("click", function(event) {
+  headerloop(headerdw); //pass document id as parameter
+});
+document.getElementById("thegymtab2").addEventListener("click", function(event) {
+  headerloop(headerthe); //pass document id as parameter
+});
+document.getElementById("anytimetab2").addEventListener("click", function(event) {
+  headerloop(headerany); //pass document id as parameter
+});

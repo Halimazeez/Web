@@ -23,11 +23,6 @@
 
 }
 
-.navbar {
-  margin: 0 auto;
-  line-height: normal;
-}
-
 nav a {
   padding: 0 1em;
   text-transform: uppercase;
@@ -191,12 +186,12 @@ figcaption {
 #gymcontent h1 {
   text-transform: uppercase;
   font-size: 50px;
-  display:none;
+  display: none;
 }
 
 #map {
   height: 400px;
-  width: 100%;
+  max-width: 100%;
   transition: none;
 }
 /*FOOTER*/
