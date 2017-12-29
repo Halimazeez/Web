@@ -46,7 +46,7 @@
 	</section><!-- End Header section-->
 
 	<section id="intro">
-		
+
 		<article class="splashart">
 				<h1>Become a champion.</h1>
 				<p>Become your own goals.</p>
@@ -68,36 +68,39 @@
 	<main id="main"> <!-- Main -->
 
 		<article class="info">
-			<h2>The top gyms in the United Kingdom</h2>
-			<p>For specific details on each gym, navigate to the gym of choice:</p>
+			<h2>leicestershire gym finder tool</h2>
+			<p>Start your adventure now!</p>
+			<p>Locate any leicestershire gym by interacting with them below!</p>
 		</article>
 
 		<section id="figures">
 
-			<figure>
-				<a href="">
+			<figure id="puregymtab">
+				<a href="#map">
 					<img alt="Pure Gym" src="images/puregym.jpg">
 					<figcaption>PureGym</figcaption>
 				</a>
 			</figure>
 
-			<figure>
-				<a href="">
+			<figure id="dwtab">
+				<a href="#map">
 					<img alt="DW Fitness" src="images/dwsports.png">
 					<figcaption>DW Sports</figcaption>
 				</a>
 			</figure>
 
-			<figure>
-				<a href="">
+			<figure id="thegymtab">
+				<a href="#map">
 					<img alt="The Gym Group" src="images/gymgroup.jpeg">
 					<figcaption>The Gym Group</figcaption>
 				</a>
 			</figure>
 
-			<figure>
-				<img alt="Anytime Fitness" src="images/anytimefitness.png">
-				<figcaption>Anytime Fitness</figcaption>
+			<figure id="anytimetab">
+				<a href="#map">
+					<img alt="Anytime Fitness" src="images/anytimefitness.png">
+					<figcaption>Anytime Fitness</figcaption>
+				</a>
 			</figure>
 
 		</section>
@@ -106,11 +109,11 @@
 
 			<div id="content-pure">
 				<h1>Puregym</h1>
-				<div id="map"></div>
 			</div>
-			<div id="content-dw" class="hidden"> </div>
-			<div id="content-thegym" class="hidden"> </div>
-			<div id="content-anytime" class="hidden"> </div>
+			<div id="content-dw"> </div>
+			<div id="content-thegym"> </div>
+			<div id="content-anytime"> </div>
+			<div id="map"></div>
 		</section>
 
 	</main>
@@ -128,7 +131,7 @@
 				</div>
 			</div>
 
-			<div class="sections sitemap fill">
+			<div class="sections sitemap">
 				<div class="wrapper">
 					<a href="#figures">PureGym</a>
 					<a href="#figures">DW Sports</a>
@@ -148,10 +151,10 @@
 	</footer>
 
 </body>
-
+	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXhsepOl8TMOFypCypaHKP_8myjGd9r2g">
+  </script>
 	<script type="text/javascript" src="js.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2jWmbXTq-oDutpEJJHnqdXptpYjKO1Ok&callback=initMap"
-    async defer></script>
 	<!--loading js after page for efficiency -->
 
 </html>
