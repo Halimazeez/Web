@@ -9,7 +9,7 @@ var anytime = {lat: 52.774445, lng: -1.210305}; //anytime location
 
 //init google maps
 function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
     center: dmu,
     scrollwheel: false,
@@ -69,7 +69,6 @@ google.maps.event.addDomListener(window, "resize", function() {
   var center = map.getCenter();
   google.maps.event.trigger(map, "resize");
   map.setCenter(center);
-
 });
 
 /*function responsivecenter() { // old
