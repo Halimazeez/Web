@@ -10,20 +10,24 @@
   figure img {max-height:300px;}
   figure {width:300px; height:300px;}
 }
-@media screen and (max-width:900px){ /* form menu small */
+@media screen and (max-width:900px){ /* form menu big */
   .navbar a{display:none;}
-  .navbar form {display:block;}
-  .navbar form select {width: 10vw;}
+  .navbar .icon {display:block;}
+  .navbar .icon {width: 10vw;}
   #headercontainer{max-width: 90%;}
   .scroll-arrow {display:inline-block;}
 
+
 }
-@media screen and (max-width:750px){ /* form menu big */
+@media screen and (max-width:750px){ /* form menu small */
   .floatl, .floatr{display:block; float:none;}
   .logo {margin-bottom:20px;}
-  .navbar form select {width: 100%;}
+  .navbar .icon {width: 100%;}
   header {text-align:center;}
   .scroll-arrow {display:none;}
+
+  .navbar .responsive {position: relative;}
+
 }
 
 @media screen and (max-height:650px) { /* fix height on text box so it doesnt hide */

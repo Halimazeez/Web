@@ -2,7 +2,7 @@
 .nopandm {margin: 0; padding: 0;}
 .nop {padding: 0;}
 .nom {margin: 0;}
-.wrap {margin 0 auto;}
+.wrap {margin: 0 auto;}
 .floatl {float:left;}
 .floatr {float:right;}
 
@@ -36,9 +36,10 @@ nav a {
   color:#56AED4;
 }
 
-.navbar form {
+.navbar .icon{
   display:none;
 }
+
 
 /* SPLASH */
 #intro {
